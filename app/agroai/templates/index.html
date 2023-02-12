@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>AGRO A.I-Homepage</title>
+    <!-- Author Meta -->
+    <meta name="author" content="AGRO AI">
+    <!-- Meta Description -->
+    <meta name="description" content="Artificial Intelligence in Agriculture">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="Agriculture, Artificial Intelligence, Agritech, Machine Learning">
+    <!-- meta character set -->
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{{url_for('agroai_bp.static', filename='css/base.css')}}">
+    <link rel="stylesheet" href="{{url_for('agroai_bp.static', filename='css/vendor.css')}}">
+    <link rel="stylesheet" href="{{url_for('agroai_bp.static', filename='css/main.css')}}">
+
+    <!-- script
+    ================================================== -->
+    <script src="{{url_for('agroai_bp.static', filename='js/modernizr.js')}}"></script>
+    <script src="{{url_for('agroai_bp.static', filename='js/pace.min.js')}}"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="{{url_for('agroai_bp.static', filename='favicon.ico')}}" type="image/x-icon">
+    <link rel="icon" href="{{url_for('agroai_bp.static', filename='favicon.ico')}}" type="image/x-icon">
+
+    <!-- Adsense Integration
+    ============================================ -->
+    <script data-ad-client="ca-pub-9758572711641070" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- header 
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+            <div class="header-logo">
+                <a class="site-logo" href="/">
+                    <img src="{{url_for('agroai_bp.static', filename='images/logo.svg')}}" alt="Homepage">
+                </a>
+            </div>
+    
+            <nav class="header-nav-wrap">
+                <ul class="header-main-nav">
+                    <li class="current"><a class="smoothscroll" href="#home" title="intro">Intro</a></li>
+                    <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll" href="#features" title="features">Features</a></li>
+                    <li><a class="smoothscroll" href="#pricing" title="pricing">Pricing</a></li>
+                    <li><a class="smoothscroll" href="#download" title="download">Download</a></li>
+                </ul>
+    
+            </nav> <!-- end header-nav-wrap -->
+    
+            <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+        </div>
+
+    </header> <!-- end header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="{{url_for('agroai_bp.static', filename='images/hero-bg.jpg')}}" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <div class="home-content__left">
+                    <h1>
+                    An Expert Adviser For 
+                    Agriculture.
+                    </h1>
+    
+                    <h3>
+                         Empowering African farmers 
+                         by reducing agricultural loss and ensuring 
+                         maximum revenue possible from farm produce.
+                    </h3>
+    
+                    <div class="home-content__btn-wrap">
+                        <a href="https://play.google.com/store/apps/details?id=com.agrospectrum.agroai_app&hl=en" class="btn btn--primary home-content__btn">
+                            Android Download
+                        </a>
+                    </div>
+                </div> <!-- end home-content__left-->
+
+                <div class="home-content__right">
+                    <img src="{{url_for('agroai_bp.static', filename='images/agro-m-2000.png')}}">
+                </div> <!-- end home-content__right -->
+
+            </div> <!-- end home-content__main -->
+
+            <ul class="home-content__social">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Linkedin</a></li>
+                
+            </ul>
+
+        </div> <!-- end home-content -->
+
+        <a href="#about" class="home-scroll smoothscroll">
+            <span class="home-scroll__text">Scroll</span>
+            <span class="home-scroll__icon"></span>
+        </a> 
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    An Unrivaled Assistant.
+                </h1>
+                <p class="lead">
+                    With the ability to identifying the appropriate crops that a farmer should grow, 
+                    crop diseases and pest, 
+                    advise them on the appropriate preventive and corrective measures while 
+                    taking into consideration revenue generation.   
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row wide about-desc" data-aos="fade-up">
+
+            <div class="col-full slick-slider about-desc__slider">
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Personalized.</h3>
+
+                    <p>
+                        We have developed an app that can be personalized to each user, from the identification system
+                        to the crops grown and the potential havest and sales period.
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Sales.</h3>
+
+                    <p>
+                        One of our major objectives is to provide to our consumers, high quality agricultural produce as 
+                        well as stable, sustainable source of income for the farmers.
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Analysis.</h3>
+
+                    <p>
+                        With the set of powerful A.I at the core of our software we are able to provide realtime analysis
+                        for both your crops and your farm produce.
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Data Friendly.</h3>
+
+                    <p>
+                        Our resouces have been made available to you offline so they can be used any where and at any point
+                        in time, once the requirements for your crops have been downloaded
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+            </div> <!-- end about-desc__slider -->
+            
+        </div> <!-- end about-desc -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- about-how
+    ================================================== -->
+    <section id="about-how" class="s-about-how">
+
+
+        <div class="row">
+           <div class="col-full video-bg" data-aos="fade-up">
+
+                <div class="shadow-overlay"></div>
+
+                <a class="btn-video" href="https://youtu.be/0mmqCKugR4U" data-lity>
+                    <span class="video-icon"></span>
+                </a>
+
+                <div class="stats">
+                    <div class="item-stats">
+                       <!--  <span class="item-stats__num">
+                            CONSTANT POSITIVE REVIEWS
+                        </span> -->
+                        <span class="item-stats__title">
+                            CONSTANT POSITIVE REVIEWS
+                        </span>
+                    </div> <!-- end item-stats -->
+                    <div class="item-stats">
+                       <!--  <span class="item-stats__num">
+                            OVER 200
+                        </span> -->
+                        <!-- <span class="item-stats__title">
+                            Positive Reviews
+                        </span> -->
+                    </div> <!-- end item-stats -->
+                </div>
+           </div> <!-- end video-bg -->
+        </div>
+
+
+        <div class="row process-wrap">
+
+            <h2 class="display-2 text-center" data-aos="fade-up">How The App Works?</h2>
+
+            <div class="process" data-aos="fade-up">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Sign-Up</h3>
+                        <p>
+                            Upon lauching our app you will be required to sign-up with your user name and  a secure password, if you are already signed up, you will be logged in automatically. Please endeavour to keep your log-in information safe. 
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Take A Picture</h3>
+                        <p>
+                            Your camera will be immediately loaded up, this will allow you take a picture of the leaves showing disease symptoms, you can then crop and resize. Click on the buttom left corner to reveal more options you can interact with. 
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Scan</h3>
+                        <p>
+                            After taking the picture, you can then use the information your have provided to our software to obtain results.It is an easy simple and staringht forward process which you can easily carry out, in your farm, lab or any other place. 
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Results</h3>
+                        <p>
+                            The results obtained are based on the input to the software. The results will contain information about the diagnosed disease and the possible solutions.
+                        </p> 
+                    </div>  
+
+                </div> <!-- end process__steps -->
+           </div> <!-- end process -->
+        </div> <!-- end about-how -->
+
+    </section> <!-- end s-about-how -->
+
+
+    <!-- features
+    ================================================== -->
+    <section id="features" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Some Features To Look Forward To.
+                </h1>
+                <p class="lead">
+                    Here are a list of amazing features we can look forward to, we are putting a list of feature that will be present in our launch version so please look forward to more amazing features in the coming updates.
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row features block-1-3 block-m-1-2">
+
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-upload"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Cloudless System</h3>
+                    <p>
+                        The majority of software offering services related to artificial intelligence carry this out with the use of a cloud server the system has to connect to. Our software provides perform better and faster becaused the major components are offline.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-video-camera"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Image Recognition</h3>
+                    <p>
+                        Perfoming facial recognition on plants is a fancy way to describe our systems operation. We applying one of the most secure and accepted means of identification to detect the diseases of your crops.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" data-aos="fade-up">
+                <div class="item-feature__icon">
+                    <i class="icon-shield"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">Always Secure</h3>
+                    <p>
+                        We are guarenteeing you a secure means of storing our users information, a secure means of payment. 
+                        With a team of developers constantly working to improve the security provided, we assure that all 
+                        information collected are in safe, secure hands.
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end features -->
+
+        <div class="testimonials-wrap" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Meet Our Team!</h2>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="{{url_for('agroai_bp.static', filename='images/avatars/user-04.jpeg')}}" alt="Author image" class="testimonials__avatar">
+                        
+                        <p>Folahan is the creator of "Agro A.I" and CEO I/O Agriculture. He has implemented several A.I driven systems from the machine vision object and facial recognition systems to predictive systems as well as embedded systems.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Akinsola Adefolahan</span>
+                            <a href="#0" class="testimonials__link">@mrnninster</a>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="{{url_for('agroai_bp.static', filename='images/avatars/user-01.jpg')}}" alt="Author image" class="testimonials__avatar">
+                        
+                        <p>Bilaal is the core mobile app developer on the team, he is the magic maker behind the our apps. He's an undergraduate developer with a lot of interest in innovative technology and innovating technology.</p>
+                        
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bilaal Salman</span>
+                            <a href="#0" class="testimonials__link">@Non_Nullable</a>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+
+
+                     <div class="testimonials__slide">
+                        <img src="{{url_for('agroai_bp.static', filename='images/avatars/user-03.jpg')}}" alt="Author image" class="testimonials__avatar">
+                        
+                        <p>John is a creative designer, with 2+ experience. He enjoys using new technologies to communicate his ideas and designs.</p>
+                        
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Banjoko John</span>
+                            <a href="#0" class="testimonials__link">@thisisjorn</a>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+                    
+                </div> <!-- end testimonials__slider -->
+
+            </div> <!-- end testimonials -->
+
+        </div> <!-- end testimonials-wrap -->
+
+    </section> <!-- end s-features -->
+
+
+    <!-- pricing
+    ================================================== -->
+    <section id="pricing" class="s-pricing target-section">
+
+        <div class="row section-header align-center" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                   Our Simple <br> Straight-Forward Pricing.
+                </h1>
+                <p class="lead">
+                    Ensuring maximum revenue generation for farmers and delivering quality and quantity to consumers
+                    are our core. To acheive this we have made our plans affordable for all. 
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row plans block-1-2 block-m-1-2 block-tab-full stack">
+
+            <div class="col-block item-plan" data-aos="fade-up">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <h3 class="item-plan__title">Basic</h3>
+                        <p class="item-plan__price">No Cost</p>
+                        <p class="item-plan__per">Forever</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                            <li>Plant Disease Detection</li>
+                            <li>Plant Identification system</li>
+                            <li>Soil Fertility Solutions</li>
+                            <li>Unimited Usage</li>
+                            
+                        </ul>
+
+                        <a class="btn btn--primary large full-width" href="#0">Get Started</a>
+                    </div>  
+                
+                </div>
+            </div> <!-- end item-plan -->
+
+            <div class="col-block item-plan item-plan--popular" data-aos="fade-up">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <h3 class="item-plan__title">Pro Plan</h3>
+                        <p class="item-plan__price">5% Charge</p>
+                        <p class="item-plan__per">On each Sale</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                            <li>All Basic Plan Features</li>
+                            <li>Direct Product Sales</li>
+                            <li>Access to Improved Features</li>
+                            <li>Access to Healthy Planting Materials</li>
+                        </ul>
+
+                        <a class="btn btn--primary large full-width" href="#0">Get Started</a>
+                    </div>
+                
+                </div>
+            </div> <!-- end item-plan -->
+
+        </div> <!-- end plans -->
+
+    </section> <!-- end s-pricing -->
+
+
+    <!-- download
+    ================================================== -->
+    <section id="download" class="s-download target-section">
+
+        <div class="row section-header align-center" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Join Our Community Today.
+                </h1>
+                <p class="lead">
+                    Feel free to follow us on facebook, instagram, and twitter, get inform about our breakthroughs within seconds. The name to look out for is AGROAI and we promise to revolutionize the agricultural field
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row">
+            <div class="col-full text-center">
+                <ul class="download-badges" data-aos="fade-up">
+                    <li><a href="#0" title="" class="badge-appstore">App Store</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.agrospectrum.agroai_app&hl=en" title="" class="badge-googleplay">Play Store</a></li>
+                </ul>
+            </div> 
+        </div>
+
+    </section> <!-- end s-download -->
+
+        <div class="row download-bottom-image" data-aos="fade-up">
+            <img src="{{url_for('agroai_bp.static', filename='images/interface.png')}}" 
+                alt="App Screenshots"> 
+        </div>
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer footer">
+
+        <div class="row section-header align-center">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Let's Stay In Touch.
+                </h1>
+                <p class="lead">
+                Subscribe for updates, special offers, and other amazing stuff. You can use any of our contact information listed below to get across to us.
+                </p>
+            </div>
+
+            <div class="row footer__top">
+
+                <div class="col-full footer__subscribe end">
+                    <div class="subscribe-form">
+                        <form enctype="multipart/form-data" action="/subscribers/index" method="POST" >
+    
+                            <input type="email" value="" name="EMAIL" class="email" placeholder="Email Address" required="" style="width: 100%;">
+                
+                            <input type="submit" name="subscribe" value="Subscribe" style="color: whitesmoke; background-color: rgb(218, 124, 18);">
+                        </form>
+                    </div>
+                </div>
+    
+            </div> <!-- end footer__top -->
+    
+        </div> <!-- end section-header -->
+
+        
+        <div class="row footer__bottom">
+
+            <div class="footer__about col-five tab-full left">
+
+                <h4>Neural Farms.</h4>
+
+                <p>
+                    Neural Farms is a company dedicated to the development of agriculture, with the use of innovative 
+                    technologies. Some of these technologies include artificial intelligence, embedded systems and more. 
+                    The focus of our systems is to improve agricultural yield, ensure that these yields do not go to waste
+                    by creating a viable market in the agricultural field.
+                </p>
+
+                <ul class="footer__social">
+                    <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="col-five md-seven tab-full right end">
+                <div class="row">
+
+                    <div class="footer__site-links col-five mob-full">
+                        <h4>Site links.</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="/" class="smoothscroll">Intro</a></li>
+                            <li><a href="#about" class="smoothscroll">About</a></li>
+                            <li><a href="#features" class="smoothscroll">Features</a></li>
+                            <li><a href="#pricing" class="smoothscroll">Pricing</a></li>
+                            <li><a href="#download" class="smoothscroll">Download</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__contact col-seven mob-full">
+                        <h4>Contact Us.</h4>
+
+                        <p>
+                        Phone: (+234) 811 648 5065 <br>
+                        Fax: (+234) 907 183 1303
+                        </p>
+                        <p>
+                        Need help or have a question? Contact us at: <br>
+                        <a href="#" class="footer__mail-link">support@agroai.farm</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-full ss-copyright">
+                <span>
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                     All rights reserved NEURAL FARMS
+                </span>
+            </div>
+
+        </div> <!-- end footer__bottom -->
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{{url_for('agroai_bp.static', filename='js/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{url_for('agroai_bp.static', filename='js/plugins.js')}}"></script>
+    <script src="{{url_for('agroai_bp.static', filename='js/main.js')}}"></script>
+
+</body>
